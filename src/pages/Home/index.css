@@ -1,0 +1,224 @@
+/*** Section Title ***/
+.section-title {
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+.section-title::before {
+    position: absolute;
+    content: "";
+    width: calc(100% + 80px);
+    height: 2px;
+    top: 4px;
+    left: -40px;
+    background: var(--bs-primary);
+    z-index: -1;
+}
+
+.section-title::after {
+    position: absolute;
+    content: "";
+    width: calc(100% + 120px);
+    height: 2px;
+    bottom: 5px;
+    left: -60px;
+    background: var(--bs-primary);
+    z-index: -1;
+}
+
+.section-title.text-start::before {
+    width: calc(100% + 40px);
+    left: 0;
+}
+
+.section-title.text-start::after {
+    width: calc(100% + 60px);
+    left: 0;
+}
+
+/*** Service ***/
+.service-item {
+    /* background: #f8e3d6; */
+    transition: .5s;
+}
+
+.service-item:hover {
+    margin-top: -10px;
+    background: #fae5e7;
+}
+
+.service-item:hover img {
+    /* filter: invert(1); */
+}
+
+.service-item * {
+    transition: .5s;
+}
+
+.service-item:hover * {
+    color: var(--bs-light) !important;
+}
+
+/** brand**/
+.focus-alt:focus-visible {
+    outline: inherit;
+}
+
+.focus-alt {
+    padding: 10px 10px;
+
+}
+
+.shadow-alt {
+    box-shadow: 0.1rem 0.1rem 0.5rem rgba(0, 0, 0, 0.15) !important;
+}
+
+/** Testmonial **/
+.project-carousel .owl-nav {
+    margin-top: 25px;
+    display: flex !important;
+    justify-content: center;
+}
+
+.project-carousel .owl-nav .owl-prev,
+.project-carousel .owl-nav .owl-next {
+    margin: 0 12px;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--bs-primary) !important;
+    background: var(--bs-light) !important;
+    border-radius: 45px;
+    font-size: 22px;
+    transition: .5s;
+}
+
+.project-carousel .owl-nav .owl-prev:hover,
+.project-carousel .owl-nav .owl-next:hover {
+    background: var(--bs-primary) !important;
+    color: var(--bs-light) !important;
+}
+
+.testimonial-carousel .owl-item.center .testimonial-text {
+    background: var(--bs-primary) !important;
+}
+
+/* breadcrumbs */
+.page-header {
+    background: linear-gradient(rgba(24, 29, 56, .7), rgba(24, 29, 56, .7)), url(/public/assets/img/breadcrumb.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+    color: white;
+}
+
+.about-img::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: -50%;
+    width: 100%;
+    height: 100%;
+    background: var(--vg-light);
+    transform: skew(20deg);
+    z-index: 1;
+}
+
+.about-img img {
+    position: relative;
+    z-index: 2;
+}
+
+/* what we offer */
+/*** service start ***/
+.service-item {
+    position: relative;
+    height: 100%;
+    border-radius: 8px;
+    box-shadow: 0 0 45px rgba(0, 0, 0, .08);
+}
+
+.service-content::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    bottom: auto;
+    background: #ffe7e882; /* Core Values */
+    border-radius: 8px;
+    transition: 1s;
+}
+
+.service-item:hover .service-content::after {
+    height: 100%;
+    opacity: 1;
+}
+
+.service-item .service-content-icon {
+    position: relative;
+    z-index: 2;
+}
+
+.service-item .service-content-icon i,
+.service-item .service-content-icon p {
+    transition: 1s;
+}
+
+.service-item:hover .service-content-icon i {
+    color: var(--bs-dark) !important;
+}
+
+.service-item:hover .service-content-icon p {
+    color: var(--bs-dark)
+}
+
+/* .service-item:hover .service-content-icon a.btn-primary {
+    background: var(--bs-white);
+    color: var(--bs-dark);
+} */
+
+.service-item .service-content-icon a.btn-primary {
+    transition: 1s !important;
+}
+
+.wow,
+.animated {
+    animation-duration: 2s !important;
+}
+
+.service-item:hover * {
+    color: var(--bs-dark) !important;
+}
+
+/* About us  */
+/* .bg-light.rounded-pill.active {
+    background-color: #f8e3d6 !important;
+}
+
+.bg-light.rounded-pill:hover {
+    background-color: #f8e3d6 !important;
+}
+
+li .rounded-pill {
+    cursor: pointer;
+}
+
+.illustration {
+    width: 100%;
+    position: relative;
+}
+
+.illustration__box {
+    position: absolute;
+    z-index: 999;
+    top: 200px;
+    left: -95px;
+} */
